@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('8d3c2eab8497a52a4a20ef023da19577.jpg') no-repeat center center fixed; /* Replace the 'XX' in the URL with the correct structure */
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+    border-radius: 20px;
+    padding: 15px; /* Reduced padding for smaller devices */
+    width: 80%; /* Default width for smaller screens */
+    max-width: 300px; /* Default max-width for smaller screens */
+}
+
+.profile-image {
+    width: 80px; /* Reduced size of the profile picture for smaller devices */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 1.2em; /* Smaller font size for mobile */
+    margin: 8px 0;
+    animation: fadeInOut 4s infinite;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.icon {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    color: #1db954; /* Spotify green for hover effect */
+}
+
+.icon:hover .fa-instagram {
+    color: #E4405F; /* Instagram brand color */
+}
+
+.icon:hover .fa-discord {
+    color: #5865F2; /* Discord brand color */
+}
+
+.icon:hover .fa-spotify {
+    color: #1DB954; /* Spotify brand color */
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 0.9em; /* Smaller font size */
+    color: #ddd;
+    font-style: italic;
+}
+
+.views {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.views .fa-eye {
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Larger styles for desktop screens (width 768px and above) */
+@media (min-width: 768px) {
+    .container {
+        padding: 25px; /* Larger padding */
+        width: 60%; /* Increased width */
+        max-width: 500px; /* Allow larger max-width */
+    }
+
+    .profile-image {
+        width: 120px; /* Larger profile image */
+        height: 120px; /* Match the width */
+        margin-bottom: 15px;
+    }
+
+    .username {
+        font-size: 1.5em; /* Larger font size */
+        margin: 10px 0;
+    }
+
+    .links {
+        gap: 20px; /* Larger gap between icons */
+        margin-top: 20px;
+    }
+
+    .icon {
+        font-size: 2em; /* Larger icon size */
+    }
+
+    .message {
+        font-size: 1em; /* Slightly larger font size */
+        margin-top: 20px;
+    }
+
+    .views {
+        font-size: 1.2em; /* Slightly larger font size */
+    }
+
+    .views .fa-eye {
+        font-size: 1.2em; /* Match larger font size */
+    }
+}
